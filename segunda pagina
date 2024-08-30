@@ -1,21 +1,18 @@
 HTML
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./emporio2.css">
+    <link rel="stylesheet" href="./index2.css">
     <link rel="stylesheet" href="emporio.js">
     <link rel="stylesheet" href="index3.html">
+   
     
 
     <title>Empório da Gula</title>
    
-    <style> 
-      
 
-    </style>
 </head>
 <link rel="stylesheet" href="./emporio.css">
 <body>
@@ -89,10 +86,7 @@ HTML
         <button class="meu-botao" >Ver mais</button>
 
     </a>
-          
-
-
-</body>
+   
 </html>
 
 CSS
@@ -300,7 +294,3 @@ select option {
     float: left;
     margin-right: 40px; /* espaço entre a imagem e o texto */
 }
-
-
-
-
