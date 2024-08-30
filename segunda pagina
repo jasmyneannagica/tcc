@@ -1,0 +1,306 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./emporio2.css">
+    <link rel="stylesheet" href="emporio.js">
+    <link rel="stylesheet" href="index3.html">
+    
+
+    <title>Empório da Gula</title>
+   
+    <style> 
+      
+
+    </style>
+</head>
+<link rel="stylesheet" href="./emporio.css">
+<body>
+    <div class="container">
+  
+        <h1>MENU</h1>
+        <div class="section">
+            <h2>Gula Grau Cheddar</h2>
+           
+                <img src="c:\Users\Aluno\Desktop\jasgihanna\TCC\imagens\b7b6125d-7bf4-44b8-8d54-0bf8321f577f.jfif" alt="Gula Grau Cheddar">
+                <div class="item-info">
+        </div>
+    </div>                
+
+    <label for="adicionais"></label>
+    <select id="opcoes" name="opcoes">
+
+        <option>Adicionais:</option>
+        <option value="opcao2">Hambúrguer na Chapa (R$ 10,00)</option>
+        <option value="opcao3">Hambúrguer de Frango empanado (R$ 10,00)</option>
+        <option value="opcao4">Hambúrguer Bovino Recheado (R$ 12,00)</option>
+        <option value="opcao5">Molho Extra (R$ 1,00)</option>
+        <option value="opcao6">Alface, Tomate ou Cebola Roxa (R$ 1,00)</option>
+        <option value="opcao7">Ovo ou Omelete (R$ 2,00)</option>
+        <option value="opcao8">Presunto ou Barbecue (R$ 4,00)</option>
+        <option value="opcao9">Mussarela, Queijo Prato, Cheddar, Catupiry, Philadelphia (R$ 5,00)</option>
+        <option value="opcao10">Calabresa ou Cebola Crispy (R$ 5,00)</option>
+        <option value="opcao11">Bacon (R$ 6,00)</option>
+        
+    </select>
+
+    <p>01 HAMBÚRGUER BOVINO DE 130G, QUEIJO PRATO, BACON, 01 HAMBÚRGUER RECHEADO E EMPANADO COM CHEDDAR, CEBOLA ROXA, ALFACE E TOMATE.</p> 
+
+
+
+    <a href="./index3.html">
+        <button class="meu-botao" >Ver mais</button>
+
+    </a>
+
+        <h1>MENU</h1>
+        <div class="section">
+            <h2>Empanado de Mussarela</h2>
+           
+                <img src="c:\Users\Aluno\Desktop\jasgihanna\TCC\imagens\2c8f96ce-91e0-462e-89aa-68d8e297c547.jfif" alt="Gula Grau Cheddar">
+                <div class="item-info">
+        </div>
+    </div>                
+
+    <label for="adicionais"></label>
+    <select id="opcoes" name="opcoes">
+
+        <option>Adicionais:</option>
+        <option value="opcao2">Hambúrguer na Chapa (R$ 10,00)</option> 
+        <option value="opcao3">Hambúrguer de Frango empanado (R$ 10,00)</option>
+        <option value="opcao4">Hambúrguer Bovino Recheado (R$ 12,00)</option>
+        <option value="opcao5">Molho Extra (R$ 1,00)</option>
+        <option value="opcao6">Alface, Tomate ou Cebola Roxa (R$ 1,00)</option>
+        <option value="opcao7">Ovo ou Omelete (R$ 2,00)</option>
+        <option value="opcao8">Presunto ou Barbecue (R$ 4,00)</option>
+        <option value="opcao9">Mussarela, Queijo Prato, Cheddar, Catupiry, Philadelphia (R$ 5,00)</option>
+        <option value="opcao10">Calabresa ou Cebola Crispy (R$ 5,00)</option>
+        <option value="opcao11">Bacon (R$ 6,00)</option>
+        
+    </select>
+
+    <p>01 HAMBÚRGUER EMPANADO E RECHEADO COM MUSSARELA, CEBOLA ROXA, ALFACE, TOMATE E MAIONESE ESPECIAL.</p> 
+
+        
+    <a href="./index3.html">
+        <button class="meu-botao" >Ver mais</button>
+
+    </a>
+          
+
+
+</body>
+</html>
+
+CSS
+
+/* styles.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background-color: #65c7c7;
+}
+
+
+
+
+img{
+    width: 450px;
+    height: 300px;
+
+}
+
+img {
+    float: left;
+    margin-right: 10px; /* espaço entre a imagem e o texto */
+}
+
+h2 {
+    text-align: center;
+    color: #2ec7cd;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* styles.css */
+label {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 10px;
+   
+}
+
+select {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #7bbec0;
+    border-radius: 4px;
+    background-color: #f3fbff;
+    cursor: pointer;
+    appearance: none; /* Remove a seta padrão do select */
+    -webkit-appearance: none; /* Safari e Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+select:focus {
+    border-color: #324e6b;
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+}
+
+.button{
+   
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #008116;
+}
+
+.meu-botao {
+    background-color: #00800b; 
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 12px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.meu-botao:hover {
+    background-color: #00661a; 
+
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  
+  img {
+    float: left;
+    margin-right: 40px; /* espaço entre a imagem e o texto */
+}
+
+
+
+
+
+
+
+
+img2{
+    width: 450px;
+    height: 300px;
+ }
+   
+
+
+img2{
+    float: left;
+    margin-right: 10px; /* espaço entre a imagem e o texto */
+}
+
+h2 {
+    text-align: center;
+    color: #2ec7cd;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* styles.css */
+label {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 10px;
+   
+}
+
+
+select {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid #7bbec0;
+    border-radius: 4px;
+    background-color: #f3fbff;
+    cursor: pointer;
+    appearance: none; /* Remove a seta padrão do select */
+    -webkit-appearance: none; /* Safari e Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+select:focus {
+    border-color: #324e6b;
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+}
+
+.button{
+   
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #008116;
+}
+
+.meu-botao {
+    background-color: #00800b; 
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    font-size: 12px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.meu-botao:hover {
+    background-color: #00661a; 
+
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  
+  img {
+    float: left;
+    margin-right: 40px; /* espaço entre a imagem e o texto */
+}
+
+
+
+
