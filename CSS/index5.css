@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -19,7 +17,7 @@ img{
 
 img {
     float: left;
-    margin-right: 10px; 
+    margin-right: 10px; /* espaço entre a imagem e o texto */
 }
 
 h2 {
@@ -29,7 +27,7 @@ h2 {
     font-size: 36px;
 }
 
-
+/* styles.css */
 label {
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
@@ -45,9 +43,9 @@ select {
     border-radius: 4px;
     background-color: #f3fbff;
     cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
+    appearance: none; /* Remove a seta padrão do select */
+    -webkit-appearance: none; /* Safari e Chrome */
+    -moz-appearance: none; /* Firefox */
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -99,7 +97,7 @@ select option {
   
   img {
     float: left;
-    margin-right: 40px
+    margin-right: 40px; /* espaço entre a imagem e o texto */
 }
 
 
@@ -118,7 +116,7 @@ img2{
 
 img2{
     float: left;
-    margin-right: 10px; 
+    margin-right: 10px; /* espaço entre a imagem e o texto */
 }
 
 h2 {
@@ -128,7 +126,7 @@ h2 {
     font-size: 36px;
 }
 
-
+/* styles.css */
 label {
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
@@ -145,9 +143,9 @@ select {
     border-radius: 4px;
     background-color: #f3fbff;
     cursor: pointer;
-    appearance: none; 
-    -webkit-appearance: none;
-    -moz-appearance: none; 
+    appearance: none; /* Remove a seta padrão do select */
+    -webkit-appearance: none; /* Safari e Chrome */
+    -moz-appearance: none; /* Firefox */
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -199,6 +197,5 @@ select option {
   
   img {
     float: left;
-    margin-right: 40px; 
+    margin-right: 40px; /* espaço entre a imagem e o texto */
 }
-

@@ -1,66 +1,74 @@
-/* styles.css */
-
 body {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #b9dfdf;
     margin: 0;
-    padding: 50px;
-    background-color: #65c7c7;
+    padding: 0;
+    color: #000000;
 }
-
-
-
-
-img{
-    width: 450px;
-    height: 300px;
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-
-img {
-    float: left;
-    margin-right: 10px; /* espaço entre a imagem e o texto */
-}
-
-h2 {
+h1 {
     text-align: center;
-    color: #2ec7cd;
+    color: #1494a5;
     margin-bottom: 40px;
     font-size: 36px;
 }
-
-/* styles.css */
-label {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-right: 10px;
-   
+.section {
+    margin-bottom: 40px;
 }
-
-select {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: 2px solid #7bbec0;
-    border-radius: 4px;
-    background-color: #f3fbff;
-    cursor: pointer;
-    appearance: none; /* Remove a seta padrão do select */
-    -webkit-appearance: none; /* Safari e Chrome */
-    -moz-appearance: none; /* Firefox */
-    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 12px;
+.section h2 {
+    background-color: #2ec7cd;
+    color: white;
+    padding: 15px;
+    margin: 0 -20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-radius: 5px 5px 0 0;
 }
-
-select:focus {
-    border-color: #324e6b;
-    outline: none;
-}
-
-select option {
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.item-info {
+    flex: 1;
+}
+.item-info h3 {
+    margin: 0;
+    color: #333;
+
+    font-size: 22px;
+}
+.item-info p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
 
 .button{
@@ -91,113 +99,7 @@ select option {
 
 }
 
-.previous {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  
-  img {
-    float: left;
-    margin-right: 40px; /* espaço entre a imagem e o texto */
-}
-
-
-
-
-
-
-
-
-img2{
-    width: 450px;
+.img{
     height: 300px;
- }
-   
-
-
-img2{
-    float: left;
-    margin-right: 10px; /* espaço entre a imagem e o texto */
-}
-
-h2 {
-    text-align: center;
-    color: #2ec7cd;
-    margin-bottom: 40px;
-    font-size: 36px;
-}
-
-/* styles.css */
-label {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-right: 10px;
-   
-}
-
-
-select {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: 2px solid #7bbec0;
-    border-radius: 4px;
-    background-color: #f3fbff;
-    cursor: pointer;
-    appearance: none; /* Remove a seta padrão do select */
-    -webkit-appearance: none; /* Safari e Chrome */
-    -moz-appearance: none; /* Firefox */
-    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 12px;
-}
-
-select:focus {
-    border-color: #324e6b;
-    outline: none;
-}
-
-select option {
-    padding: 10px;
-}
-
-.button{
-   
-
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #008116;
-}
-
-.meu-botao {
-    background-color: #00800b; 
-    color: white;
-    border: none;
-    padding: 10px 20px; 
-    font-size: 12px;
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-.meu-botao:hover {
-    background-color: #00661a; 
-
-}
-
-.previous {
-    background-color: #f1f1f1;
-    color: black;
-  }
-  
-  
-  img {
-    float: left;
-    margin-right: 40px; /* espaço entre a imagem e o texto */
+    width: 300px;
 }

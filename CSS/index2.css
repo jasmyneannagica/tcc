@@ -4,8 +4,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 0;
-    padding: 50px;
-    background-color: #65c7c7;
+    padding:100px;
+    background-color: #b9dfdf;
 }
 
 
@@ -201,3 +201,6 @@ select option {
     float: left;
     margin-right: 40px; /* espaço entre a imagem e o texto */
 }
+
+
+
