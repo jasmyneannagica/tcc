@@ -6,4 +6,4 @@ segundo passo:
 git commit -m "escreve o que você fez"
 
 terceiro passo:
-git push origin main
+git push
