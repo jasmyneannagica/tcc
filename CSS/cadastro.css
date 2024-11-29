@@ -4,7 +4,7 @@
 
 body {
 font-family: 'Times New Roman', Times, serif;
-    background-color:#b9dfdf;
+    background-color:#b8f6f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,7 @@ h1 {
     font-weight: bold;
     margin: 0;
 }
+
 
 p {
     font-size: 14px;
@@ -68,7 +69,10 @@ button.ghost {
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    
+
 }
+
 
 .form-container {
     position: absolute;
@@ -77,11 +81,6 @@ button.ghost {
     transition: all 0.6s ease-in-out;
 }
 
-.login-container {
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
 
 .register-container {
     left: 0;
@@ -112,7 +111,7 @@ button.ghost {
 
 .overlay {
     background-color: #2ec7cd;
-    background: linear-gradient(to right, #2ec7cd, #28b3b8 );
+    background: linear-gradient(to right, #71d1d4, #71d1d4);
     color: #fff;
     position: relative;
     left: -100%;
@@ -156,4 +155,10 @@ button.ghost {
 
 .container.right-panel-active .overlay-right {
     transform: translateX(20%);
+}
+
+.logo{
+   width: 390px;
+   height: 500px;
+
 }
