@@ -1,70 +1,65 @@
 /* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Cor de fundo suave */
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fundo claro */
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 /* Título principal */
 h1 {
     text-align: center;
-    font-size: 2.5rem;
-    color: #343a40;
-    margin-bottom: 30px;
+    font-size: 1.8rem; /* Tamanho menor */
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Card principal */
+/* Cards */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centraliza o card */
+    border: 1px solid #ddd; /* Borda simples */
+    border-radius: 5px;
+    background-color: #fff; /* Fundo branco */
+    width: 12rem; /* Largura menor */
+    margin: 10px auto; /* Espaçamento automático */
+    padding: 10px;
+    text-align: center; /* Centraliza texto */
 }
 
-/* Imagem do card */
+/* Imagens */
 .card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100px; /* Altura menor */
+    object-fit: cover; /* Ajusta imagem ao tamanho */
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas no topo */
 }
 
-/* Conteúdo do card */
+/* Títulos e textos */
 .card-title {
-    font-size: 1.5rem;
-    color: #495057;
-    text-align: center;
-    margin: 15px 0;
+    font-size: 1rem;
+    color: #007bff;
+    margin-bottom: 5px;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 1rem;
-    color: #6c757d;
-    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 /* Botões */
 .btn {
     display: inline-block;
-    margin: 10px 5px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    width: 80px;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
+    padding: 6px 10px; /* Botões menores */
+    font-size: 0.9rem;
+    border: 1px solid #007bff;
     background-color: #007bff;
     color: #fff;
-    border: none;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.btn:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
 }
