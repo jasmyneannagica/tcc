@@ -1,40 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const decreaseButton = document.getElementById('decrease');
-    const increaseButton = document.getElementById('increase');
-    const quantityInput = document.getElementById('quantity');
-    const totalQuantityDisplay = document.getElementById('total-quantity');
-    const totalPriceDisplay = document.getElementById('total-price');
-    const addToCartButton = document.getElementById('add-to-cart');
+// Seleciona os elementos
+const btnIncrementar = document.getElementById("incrementar");
+const btnDecrementar = document.getElementById("decrementar");
+const quantidadeSpan = document.getElementById("quantidade");
+const valorTotalSpan = document.getElementById("valor-total");
+const precoUnitarioSpan = document.getElementById("preco-unitario");
 
-    const pricePerLanche = 10;  // Preço fixo do lanche
-    let quantity = 1;  // Quantidade inicial
+// Variáveis para armazenar os dados
+let quantidade = 0;
+const precoUnitario = parseFloat(precoUnitarioSpan.textContent); // Converte o preço para número
 
-    // Atualiza o display da quantidade e do preço
-    function updateDisplay() {
-        quantityInput.value = quantity; // Atualiza o campo de input
-        totalQuantityDisplay.textContent = quantity; // Atualiza o total de lanches
-        totalPriceDisplay.textContent = `R$${(quantity * pricePerLanche).toFixed(2)}`; // Atualiza o valor total
-    }
+// Função para atualizar os valores na tela
+function atualizarValores() {
+    quantidadeSpan.textContent = quantidade;
+    valorTotalSpan.textContent = (quantidade * precoUnitario).toFixed(2); // Atualiza o total formatado
+}
 
-    // Função para diminuir a quantidade
-    decreaseButton.addEventListener('click', function() {
-        if (quantity > 1) {  // Impede que a quantidade seja menor que 1
-            quantity--;
-            updateDisplay();
-        }
-    });
-
-    // Função para aumentar a quantidade
-    increaseButton.addEventListener('click', function() {
-        quantity++;
-        updateDisplay();
-    });
-
-    // Quando clicar em "Adicionar ao Carrinho"
-    addToCartButton.addEventListener('click', function() {
-        alert(`Você adicionou ${quantity} lanche(s) ao carrinho!`);
-    });
-
-    // Inicializa o display
-    updateDisplay();
+// Event listener para aumentar a quantidade
+btnIncrementar.addEventListener("click", () => {
+    quantidade++;
+    atualizarValores();
 });
+
+// Event listener para diminuir a quantidade
+btnDecrementar.addEventListener("click", () => {
+    if (quantidade > 0) {
+        quantidade--;
+    }
+    atualizarValores();
+});
+
+// Atualiza os valores iniciais
+atualizarValores();
