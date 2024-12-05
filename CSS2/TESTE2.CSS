@@ -1,27 +1,27 @@
-/* Estilo geral */
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Fundo claro */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #cdf5ff; 
     margin: 0;
     padding: 0;
 }
 
-/* Título principal */
+
 h1 {
     text-align: center;
-    font-size: 1.8rem; /* Tamanho menor */
+    font-size: 1.8rem; 
     color: #333;
     margin-bottom: 20px;
 }
 
 /* Cards */
 .card {
-    border: 1px solid #ddd; /* Borda simples */
-    border-radius: 5px;
+    border: 1px solid #ddd; 
+    border-radius: 15px;
     background-color: #fff; /* Fundo branco */
-    width: 12rem; /* Largura menor */
-    margin: 10px auto; /* Espaçamento automático */
-    padding: 10px;
+    width: 15rem; /* Largura menor */
+    margin: 20px auto; /* Espaçamento automático */
+    padding: 20px;
     text-align: center; /* Centraliza texto */
 }
 
@@ -63,3 +63,22 @@ h1 {
 .btn:hover {
     background-color: #0056b3; /* Azul mais escuro no hover */
 }
+
+.card {
+    border: 1px solid #ddd; /* Borda simples */
+    border-radius: 5px;
+    background-color: #fff; /* Fundo branco */
+    width: 12rem; /* Largura menor */
+    margin: 10px auto; /* Espaçamento automático */
+    padding: 10px;
+    text-align: center; /* Centraliza texto */
+}
+
+/* Imagens */
+.card img {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 100px; /* Altura menor */
+    object-fit: cover; /* Ajusta imagem ao tamanho */
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas no topo */
+}
+

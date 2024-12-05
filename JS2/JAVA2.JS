@@ -28,6 +28,14 @@ function aumentarQuantidade(cardId) {
     } else if (cardId === 3) {
       precoUnitario = 25;
     }
+    if (cardId === 4) {
+      precoUnitario = 20;
+    } else if (cardId === 5) {
+      precoUnitario = 22;
+    } else if (cardId === 6) {
+      precoUnitario = 19;
+    }
+
 
     // Atualizando o preço
     const precoTotal = quantidade * precoUnitario;
