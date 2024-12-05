@@ -1,11 +1,4 @@
 document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
-    // Captura o nome do cliente
-    const nomeCliente = document.getElementById("nomeCliente").value.trim();
-    if (!nomeCliente) {
-        alert("Por favor, informe seu nome.");
-        return;
-    }
-
     // Captura os dados dos lanches
     const lanches = [];
     let total = 0;
@@ -27,6 +20,8 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
         return;
     }
 
+     
+
     // Obtém data e horário atual
     const agora = new Date();
     const data = agora.toLocaleDateString("pt-BR");
@@ -35,10 +30,11 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
     // Endereço fixo
     const endereco = "Rua Exemplo, 123 - Centro, São Paulo - SP";
 
+    
+
     // Monta o conteúdo do PDF
     let conteudo = `
-        <h1>Comprovante de Pedido</h1>
-        <p><strong>Nome do Cliente:</strong> ${nomeCliente}</p>
+        <h1>Comprovante</h1>
         <p><strong>Data:</strong> ${data}</p>
         <p><strong>Horário:</strong> ${horario}</p>
         <p><strong>Endereço:</strong> ${endereco}</p>
