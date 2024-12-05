@@ -29,11 +29,11 @@ function aumentarQuantidade(cardId) {
       precoUnitario = 25;
     }
     if (cardId === 4) {
-      precoUnitario = 20;
+      precoUnitario = 28;
     } else if (cardId === 5) {
-      precoUnitario = 22;
+      precoUnitario = 25;
     } else if (cardId === 6) {
-      precoUnitario = 19;
+      precoUnitario = 30;
     }
 
 

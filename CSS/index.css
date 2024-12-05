@@ -14,26 +14,26 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Cards */
+
 .card {
     border: 1px solid #ddd; 
     border-radius: 15px;
-    background-color: #fff; /* Fundo branco */
-    width: 15rem; /* Largura menor */
-    margin: 20px auto; /* Espaçamento automático */
+    background-color: #fff; 
+    width: 15rem; 
+    margin: 20px auto; 
     padding: 20px;
-    text-align: center; /* Centraliza texto */
+    text-align: center; 
 }
 
-/* Imagens */
+
 .card img {
-    width: 100%; /* Ocupa toda a largura do card */
-    height: 100px; /* Altura menor */
-    object-fit: cover; /* Ajusta imagem ao tamanho */
-    border-radius: 5px 5px 0 0; /* Bordas arredondadas no topo */
+    width: 100%; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 5px 5px 0 0; 
 }
 
-/* Títulos e textos */
+
 .card-title {
     font-size: 1rem;
     color: #007bff;
@@ -46,10 +46,10 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Botões */
+
 .btn {
     display: inline-block;
-    padding: 6px 10px; /* Botões menores */
+    padding: 6px 10px; 
     font-size: 0.9rem;
     border: 1px solid #007bff;
     background-color: #007bff;
@@ -61,25 +61,24 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Azul mais escuro no hover */
+    background-color: #0056b3; 
 }
 
 .card {
-    border: 1px solid #ddd; /* Borda simples */
+    border: 1px solid #ddd; 
     border-radius: 5px;
-    background-color: #fff; /* Fundo branco */
-    width: 12rem; /* Largura menor */
-    margin: 10px auto; /* Espaçamento automático */
+    background-color: #fff; 
+    width: 12rem; 
+    margin: 10px auto; 
     padding: 10px;
-    text-align: center; /* Centraliza texto */
+    text-align: center; 
 }
 
-/* Imagens */
 .card img {
-    width: 100%; /* Ocupa toda a largura do card */
-    height: 100px; /* Altura menor */
-    object-fit: cover; /* Ajusta imagem ao tamanho */
-    border-radius: 5px 5px 0 0; /* Bordas arredondadas no topo */
+    width: 100%;
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 5px 5px 0 0;
 }
 
 .container {
