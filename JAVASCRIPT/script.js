@@ -5,7 +5,7 @@ function aumentarQuantidade(cardId) {
     atualizarPreco(cardId);
   }
 
-  // Função para diminuir a quantidade
+  
   function diminuirQuantidade(cardId) {
     const quantidadeElemento = document.getElementById(`quantidade-${cardId}`);
     const quantidade = parseInt(quantidadeElemento.innerText);
@@ -15,12 +15,12 @@ function aumentarQuantidade(cardId) {
     }
   }
 
-  // Função para atualizar o preço com base na quantidade
+  
   function atualizarPreco(cardId) {
     const quantidade = parseInt(document.getElementById(`quantidade-${cardId}`).innerText);
     let precoUnitario;
 
-    // Definindo o preço de cada card
+    
     if (cardId === 1) {
       precoUnitario = 15;
     } else if (cardId === 2) {
@@ -37,7 +37,7 @@ function aumentarQuantidade(cardId) {
     }
 
 
-    // Atualizando o preço
+   
     const precoTotal = quantidade * precoUnitario;
     document.getElementById(`preco-${cardId}`).innerText = `Preço: R$ ${precoTotal.toFixed(2)}`;
   }

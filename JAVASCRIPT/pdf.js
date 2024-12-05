@@ -1,5 +1,5 @@
 document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
-    // Captura os dados dos lanches
+   
     const lanches = [];
     let total = 0;
 
@@ -22,17 +22,16 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
 
      
 
-    // Obtém data e horário atual
+ 
     const agora = new Date();
     const data = agora.toLocaleDateString("pt-BR");
     const horario = agora.toLocaleTimeString("pt-BR");
 
-    // Endereço fixo
+   
     const endereco = "Rua Exemplo, 123 - Centro, São Paulo - SP";
 
     
 
-    // Monta o conteúdo do PDF
     let conteudo = `
         <h1>Comprovante</h1>
         <p><strong>Data:</strong> ${data}</p>
@@ -68,7 +67,7 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
         <h2>Total: R$ ${total.toFixed(2)}</h2>
     `;
 
-    // Configuração do html2pdf.js
+   
     const opt = {
         margin: 10,
         filename: 'pedido.pdf',
@@ -76,7 +75,7 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
-    // Gera o PDF
+  
     const element = document.createElement("div");
     element.innerHTML = conteudo;
     html2pdf().set(opt).from(element).save();
