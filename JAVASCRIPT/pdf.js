@@ -1,12 +1,24 @@
 document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
+    // Captura o nome do cliente
+    const nomeCliente = document.getElementById("nomeCliente").value.trim();
+    if (!nomeCliente) {
+        alert("Por favor, informe seu nome.");
+        return;
+    }
+
     // Captura os dados dos lanches
     const lanches = [];
+    let total = 0;
+
     for (let i = 1; i <= 6; i++) {
-        const quantidade = parseInt(document.getElementById(`quantidade-${i}`).innerText);
+        const quantidade = parseInt(document.getElementById(`quantidade-${i}`).innerText) || 0;
         if (quantidade > 0) {
             const titulo = document.querySelector(`#quantidade-${i}`).closest('.card-body').querySelector('.card-title').innerText;
-            const preco = document.getElementById(`preco-${i}`).innerText.replace("Preço: ", "");
-            lanches.push({ titulo, quantidade, preco });
+            const precoTexto = document.getElementById(`preco-${i}`).innerText.replace("Preço: R$", "").trim();
+            const preco = parseFloat(precoTexto.replace(",", ".")); // Converte preço para número
+            const subtotal = quantidade * preco;
+            total += subtotal;
+            lanches.push({ titulo, quantidade, preco: `R$ ${preco.toFixed(2)}`, subtotal: `R$ ${subtotal.toFixed(2)}` });
         }
     }
 
@@ -20,12 +32,13 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
     const data = agora.toLocaleDateString("pt-BR");
     const horario = agora.toLocaleTimeString("pt-BR");
 
-    // Endereço fixo (pode ser ajustado ou capturado dinamicamente)
+    // Endereço fixo
     const endereco = "Rua Exemplo, 123 - Centro, São Paulo - SP";
 
     // Monta o conteúdo do PDF
     let conteudo = `
-        <h1>Comprovante</h1>
+        <h1>Comprovante de Pedido</h1>
+        <p><strong>Nome do Cliente:</strong> ${nomeCliente}</p>
         <p><strong>Data:</strong> ${data}</p>
         <p><strong>Horário:</strong> ${horario}</p>
         <p><strong>Endereço:</strong> ${endereco}</p>
@@ -35,7 +48,8 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
                 <tr>
                     <th>Item</th>
                     <th>Quantidade</th>
-                    <th>Preço</th>
+                    <th>Preço Unitário</th>
+                    <th>Subtotal</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +61,7 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
                 <td>${lanche.titulo}</td>
                 <td>${lanche.quantidade}</td>
                 <td>${lanche.preco}</td>
+                <td>${lanche.subtotal}</td>
             </tr>
         `;
     });
@@ -54,6 +69,7 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
     conteudo += `
             </tbody>
         </table>
+        <h2>Total: R$ ${total.toFixed(2)}</h2>
     `;
 
     // Configuração do html2pdf.js
@@ -69,4 +85,3 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
     element.innerHTML = conteudo;
     html2pdf().set(opt).from(element).save();
 });
-
