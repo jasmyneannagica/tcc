@@ -42,44 +42,5 @@ function aumentarQuantidade(cardId) {
     document.getElementById(`preco-${cardId}`).innerText = `Preço: R$ ${precoTotal.toFixed(2)}`;
   }
 
-  // script.js
-document.addEventListener("DOMContentLoaded", () => {
-  const openCardBtn = document.getElementById("open-card-btn");
-  const closeCardBtn = document.getElementById("close-card-btn");
-  const pedidoCard = document.getElementById("pedido-card");
-
-  // Abre o card
-  openCardBtn.addEventListener("click", () => {
-    pedidoCard.classList.remove("hidden");
-  });
-
-  // Fecha o card
-  closeCardBtn.addEventListener("click", () => {
-    pedidoCard.classList.add("hidden");
-  });
-
-  // Simulação de envio do formulário
-  const pedidoForm = document.getElementById("pedido-form");
-  pedidoForm.addEventListener("submit", (event) => {
-    event.preventDefault(); // Evita o reload da página
-    alert("Pedido enviado com sucesso!");
-    pedidoCard.classList.add("hidden");
-    pedidoForm.reset();
-  });
-});
-
-// Seleciona os elementos
-const finalizarPedidoBtn = document.getElementById("finalizarPedidoBtn");
-const pedidoCard = document.getElementById("pedido-card");
-const closeCardBtn = document.getElementById("close-card-btn");
-
-// Evento para mostrar o card ao clicar no botão "Finalizar Pedido"
-finalizarPedidoBtn.addEventListener("click", () => {
-    pedidoCard.classList.remove("hidden");
-});
-
-// Evento para ocultar o card ao clicar no botão "Cancelar"
-closeCardBtn.addEventListener("click", () => {
-    pedidoCard.classList.add("hidden");
-});
+ 
 
