@@ -67,3 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
     pedidoForm.reset();
   });
 });
+
+// Seleciona os elementos
+const finalizarPedidoBtn = document.getElementById("finalizarPedidoBtn");
+const pedidoCard = document.getElementById("pedido-card");
+const closeCardBtn = document.getElementById("close-card-btn");
+
+// Evento para mostrar o card ao clicar no botão "Finalizar Pedido"
+finalizarPedidoBtn.addEventListener("click", () => {
+    pedidoCard.classList.remove("hidden");
+});
+
+// Evento para ocultar o card ao clicar no botão "Cancelar"
+closeCardBtn.addEventListener("click", () => {
+    pedidoCard.classList.add("hidden");
+});
+
