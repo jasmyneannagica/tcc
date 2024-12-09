@@ -8,7 +8,7 @@ document.getElementById("finalizarPedidoBtn").addEventListener("click", () => {
         if (quantidade > 0) {
             const titulo = document.querySelector(`#quantidade-${i}`).closest('.card-body').querySelector('.card-title').innerText;
             const precoTexto = document.getElementById(`preco-${i}`).innerText.replace("Preço: R$", "").trim();
-            const preco = parseFloat(precoTexto.replace(",", ".")); // Converte preço para número
+            const preco = parseFloat(precoTexto.replace(",", "."));
             const subtotal = quantidade * preco;
             total += subtotal;
             lanches.push({ titulo, quantidade, preco: `R$ ${preco.toFixed(2)}`, subtotal: `R$ ${subtotal.toFixed(2)}` });

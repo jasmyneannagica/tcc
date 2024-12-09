@@ -1,4 +1,4 @@
-/* Estilo Geral */
+
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #cdf5ff;
@@ -10,7 +10,6 @@ body {
   height: 100vh;
 }
 
-/* Título Principal */
 h1 {
   text-align: center;
   font-size: 99px;
@@ -18,12 +17,12 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Container Geral */
+
 .container {
   text-align: center;
 }
 
-/* Estilo do Card */
+
 .card {
   position: relative;
   border: 1px solid #ddd;
@@ -56,7 +55,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Estilo dos Botões */
+
 .btn {
   display: inline-block;
   padding: 6px 10px;
@@ -96,7 +95,7 @@ h1 {
   transform: scale(0.95);
 }
 
-/* Formulário */
+
 form label {
   display: block;
   margin-top: 10px;
@@ -112,7 +111,7 @@ form input {
   border-radius: 4px;
 }
 
-/* Elementos Escondidos */
+
 .hidden {
   display: none;
 }
