@@ -96,22 +96,4 @@ h1 {
 }
 
 
-form label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
 
-form input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-
-.hidden {
-  display: none;
-}
